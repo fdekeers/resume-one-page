@@ -49,7 +49,6 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
-\usepackage{graphicx}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -71,9 +70,7 @@
 \namesection{François}{De Keersmaeker}{
     +32 470 29 32 63 \\
     \href{mailto:francois.dekeersmaeker@uclouvain.be}{francois.dekeersmaeker@uclouvain.be}
-}
-
-%\includegraphics[scale=0.08]{face_pic_3.jpg}
+}{face_pic_3_cropped.png}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -81,51 +78,19 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.35\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
+%     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Publications}
+\vspace{0.7cm}
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{unsrt}
+\bibliography{publications}
+\nocite{*}
 
-\subsection{UCLouvain}
-\descript{MS in Computer Engineering}
-\location{Grad. 2021 | Louvain-la-Neuve, Belgium}
-Louvain School of Engineering \\
-Major: Networks \& Security \\
-\textit{Magna Cum Laude} \\
-\location{Cum. GPA: 17.52 / 20}
-\sectionsep
-
-\subsection{UCLouvain}
-\descript{BS in Engineering}
-\location{Grad. 2019 | Louvain-la-Neuve, Belgium}
-Louvain School of Engineering \\
-Major: Computer Science \\
-Minor: Electrical Engineering \\
-\textit{Cum Laude} \\
-\location{Cum. GPA: 16}
-\sectionsep
-
-\subsection{Institut Saint-Joseph}
-\location{Grad. 2016 | Ciney, Belgium}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-LinkedIn://  \href{https://www.linkedin.com/in/françois-de-keersmaeker-11301a210/}{\bf François De Keersmaeker} \\
-Github:// \href{https://github.com/fdekeers}{\bf fdekeers} \\
-Scholar:// \href{https://scholar.google.com/citations?user=UrEkeo4AAAAJ&hl=fr}{\bf François De Keersmaeker} \\
-ResearchGate:// \href{https://www.researchgate.net/profile/Francois-De-Keersmaeker}{\bf François De Keersmaeker} \\
-ORCID:// \href{https://orcid.org/0000-0002-4967-4132}{\bf 0000-0002-4967-4132}
-%Facebook:// \href{https://www.facebook.com/francois.dekeersmaeker.7/}{\bf François De Keersmaeker} \\
-%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
@@ -158,19 +123,41 @@ ORCID:// \href{https://orcid.org/0000-0002-4967-4132}{\bf 0000-0002-4967-4132}
 
 \section{Skills}
 \subsection{Programming}
-Shell \textbullet{} Assembly \textbullet{} C \textbullet{} C++ \textbullet{} Java \\
-Python \textbullet{} Ruby \textbullet{} Scala \textbullet{} JavaScript \\
-Android \textbullet{} Matlab \textbullet{} \LaTeX \textbullet{} Erlang
+Shell \textbullet{} Assembly \textbullet{} C \textbullet{} C++ \textbullet{} Java \textbullet{} Python \\
+Ruby \textbullet{} Scala \textbullet{} JavaScript \textbullet{} Android \textbullet{} Matlab \\
+\LaTeX \textbullet{} Erlang \textbullet{} SystemVerilog
 
 \subsection{Tools}
-SQL \textbullet{} Docker \textbullet{} GDB \textbullet{} Jinja \textbullet{} Arduino \\
-Ghidra
+Linux \textbullet{} Windows \textbullet{} Git \textbullet{} SQL \textbullet{} Docker \\
+VirtualBox \textbullet{} Vagrant \textbullet{} GDB \textbullet{} Jinja \textbullet{} Arduino \\
+Ghidra \textbullet{} Zeek \textbullet{} LTspice \textbullet{} Intel Quartus Prime
 
-% \subsection{Desktop}
-% Word \textbullet{} Excel \textbullet{} PowerPoint
+\subsection{Desktop}
+Word \textbullet{} Excel \textbullet{} PowerPoint
+
+\section{Languages}
+
+\includegraphics[scale=0.015]{images/france.png}  French: native \\
+\includegraphics[scale=0.015]{images/uk.png}  English: B2 \\
+\includegraphics[scale=0.015]{images/netherlands.png}  Dutch: B1 \\
+\includegraphics[scale=0.015]{images/italy.png}  Italian: A1
 
 
-\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\includegraphics[scale=0.03]{images/linkedin.png} LinkedIn://  \href{https://www.linkedin.com/in/françois-de-keersmaeker-11301a210/}{\bf François De Keersmaeker} \\
+\includegraphics[scale=0.03]{images/github.png} Github:// \href{https://github.com/fdekeers}{\bf fdekeers} \\
+\includegraphics[scale=0.016]{images/scholar.png} Scholar:// \href{https://scholar.google.com/citations?user=UrEkeo4AAAAJ&hl=fr}{\bf François De Keersmaeker} \\
+\includegraphics[scale=0.01]{images/researchgate.png} ResearchGate:// \href{https://www.researchgate.net/profile/Francois-De-Keersmaeker}{\bf François De Keersmaeker} \\
+\includegraphics[scale=0.01]{images/orcid.png} ORCID:// \href{https://orcid.org/0000-0002-4967-4132}{\bf 0000-0002-4967-4132}
+%Facebook:// \href{https://www.facebook.com/francois.dekeersmaeker.7/}{\bf François De Keersmaeker} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -180,89 +167,130 @@ Ghidra
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.60\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
+
+\runsubsection{UCLouvain}
+\descript{| Teaching Assistant}
+\location{September 2021 - Present | Louvain-la-Neuve, Belgium}
+\textbullet{} Computer System Security (Graduate) \\
+\textbullet{} Computer Systems (Undergraduate) \\
+\textbullet{} Programming Languages Paradigms (Undergraduate) \\
+\textbullet{} Bases of Computer Science II (Undergraduate) \\
 \sectionsep
 
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
-\end{tightemize}
+\runsubsection{UCLouvain}
+\descript{| Developer and Course administrator}
+\location{Summer 2021 | Louvain-la-Neuve, Belgium}
+\textbullet{} Updated the syllabus and created new exercises for a computer science course \\
+\textbullet{} Extensively used Docker containers for tool configuration and development \\
+\textbullet{} Extended the features of VSCode for the Oz programming language \\
 \sectionsep
 
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
-\begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
-\item Created a backbone.js-like framework for the Captions editor.
-\end{tightemize}
+\runsubsection{UCLouvain}
+\descript{| Academic Tutor}
+\location{Sept. 2019 - May 2021 | Louvain-la-Neuve, Belgium}
+\textbullet{} Supervised practical sessions of bachelor students \\
+\textbullet{} Graded students' assignments \\
+\textbullet{} Had meetings with teachers every week to manage the course \\
 \sectionsep
 
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
-\begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
-\item I created the Meme generator and more in PHP and Shell.
-\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
-\end{tightemize}
+\runsubsection{City Job}
+\descript{| Android Developer}
+\location{March 2019 - June 2021 | Louvain-la-Neuve, Belgium}
+\textbullet{} Worked with 3 other students on the creation of a start-up \\
+\textbullet{} Developed an Android application to be launched on the Play Store \\
+\textbullet{} Participated in the 11\textsuperscript{th} edition of Mind \& Market, to present the start-up to potential investors \\
 \sectionsep
+
+
+% \runsubsection{Coursera}
+% \descript{| KPCB Fellow + Software Engineering Intern }
+% \location{June 2014 – Sep 2014 | Mountain View, CA}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+% \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+% \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Google}
+% \descript{| Software Engineering Intern }
+% \location{May 2013 – Aug 2013 | Mountain View, CA}
+% \begin{tightemize}
+% \item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+% \item Created a backbone.js-like framework for the Captions editor.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+% \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\section{Education}
+
+\subsection{PhD in Computer Engineering}
+\descript{UCLouvain | ICTEAM - INGI}
+\location{Expected grad. September 2025 | Louvain-la-Neuve, Belgium}
+F.R.S.-FNRS candidate \\
+Research topic: Smart Home network security
 \sectionsep
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+\subsection{MS in Computer Engineering}
+\descript{UCLouvain | Louvain School of Management}
+\location{Grad. June 2021 | Louvain-la-Neuve, Belgium}
+Major: Networks \& Security \\
+Languages: courses fully in English \\
+\textit{Summa Cum Laude} (Cum. GPA: 87.6 \%) \\
 \sectionsep
+
+\subsection{BS in Engineering}
+\descript{UCLouvain | Louvain School of Management}
+\location{Grad. June 2019 | Louvain-la-Neuve, Belgium}
+Major: Computer Engineering | Minor: Electrical Engineering \\
+Languages: core courses in French, English language courses \\
+\textit{Magna Cum Laude} (Cum. GPA: 79.3 \%) \\
+\sectionsep
+
+\subsection{Secondary School}
+\descript{Institut Saint-Joseph}
+\location{Grad. June 2016 | Ciney, Belgium}
+Majors: Mathematics \& Science \\
+Languages: core courses in French, Dutch in immersion classes, English \\
+\textit{Excellence prize (Best student of the promotion)}
+\sectionsep
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-\end{tabular}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}

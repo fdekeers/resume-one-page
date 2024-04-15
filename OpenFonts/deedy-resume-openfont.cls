@@ -1,3 +1,4 @@
+
 % Intro Options
 \ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
@@ -9,8 +10,10 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
+\usepackage[hmargin=0.5cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+
 
 % Publications
 \usepackage{cite}
@@ -39,15 +42,21 @@ Last Updated on \today
 \end{textblock}}
 
 % Name command
-\newcommand{\namesection}[3]{
-\centering{
-\fontsize{40pt}{60pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
-\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
-} \\[5pt]
-\centering{
-\color{headings}
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+\newcommand{\namesection}[4]{
+\begin{minipage}[t]{0.8\textwidth}
+  \centering{
+    \fontsize{40pt}{60pt}
+    \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1
+    \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+    } \\[5pt]
+    \centering{
+    \color{headings}
+    \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.15\textwidth}
+  \includegraphics[scale=0.075]{#4}
+\end{minipage}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
 }
