@@ -1,3 +1,5 @@
+% !TeX program = xelatex
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
@@ -47,6 +49,7 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -58,16 +61,19 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
+%\lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+\namesection{François}{De Keersmaeker}{
+    +32 470 29 32 63 \\
+    \href{mailto:francois.dekeersmaeker@uclouvain.be}{francois.dekeersmaeker@uclouvain.be}
 }
+
+%\includegraphics[scale=0.08]{face_pic_3.jpg}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -83,22 +89,27 @@
 
 \section{Education} 
 
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
+\subsection{UCLouvain}
+\descript{MS in Computer Engineering}
+\location{Grad. 2021 | Louvain-la-Neuve, Belgium}
+Louvain School of Engineering \\
+Major: Networks \& Security \\
+\textit{Magna Cum Laude} \\
+\location{Cum. GPA: 17.52 / 20}
 \sectionsep
 
-\subsection{Cornell University}
-\descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
-College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
+\subsection{UCLouvain}
+\descript{BS in Engineering}
+\location{Grad. 2019 | Louvain-la-Neuve, Belgium}
+Louvain School of Engineering \\
+Major: Computer Science \\
+Minor: Electrical Engineering \\
+\textit{Cum Laude} \\
+\location{Cum. GPA: 16}
 \sectionsep
 
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
+\subsection{Institut Saint-Joseph}
+\location{Grad. 2016 | Ciney, Belgium}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,37 +117,40 @@ Major GPA: 3.9 / 4.0}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+LinkedIn://  \href{https://www.linkedin.com/in/françois-de-keersmaeker-11301a210/}{\bf François De Keersmaeker} \\
+Github:// \href{https://github.com/fdekeers}{\bf fdekeers} \\
+Scholar:// \href{https://scholar.google.com/citations?user=UrEkeo4AAAAJ&hl=fr}{\bf François De Keersmaeker} \\
+ResearchGate:// \href{https://www.researchgate.net/profile/Francois-De-Keersmaeker}{\bf François De Keersmaeker} \\
+ORCID:// \href{https://orcid.org/0000-0002-4967-4132}{\bf 0000-0002-4967-4132}
+%Facebook:// \href{https://www.facebook.com/francois.dekeersmaeker.7/}{\bf François De Keersmaeker} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
-\sectionsep
+% \section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
 
-\subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
-Unix Tools and Scripting \\
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -144,13 +158,18 @@ Unix Tools and Scripting \\
 
 \section{Skills}
 \subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+Shell \textbullet{} Assembly \textbullet{} C \textbullet{} C++ \textbullet{} Java \\
+Python \textbullet{} Ruby \textbullet{} Scala \textbullet{} JavaScript \\
+Android \textbullet{} Matlab \textbullet{} \LaTeX \textbullet{} Erlang
+
+\subsection{Tools}
+SQL \textbullet{} Docker \textbullet{} GDB \textbullet{} Jinja \textbullet{} Arduino \\
+Ghidra
+
+% \subsection{Desktop}
+% Word \textbullet{} Excel \textbullet{} PowerPoint
+
+
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,7 +196,8 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 \descript{| KPCB Fellow + Software Engineering Intern }
 \location{June 2014 – Sep 2014 | Mountain View, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+\begin{tightemize}
+\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
 \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
 \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
 \end{tightemize}
@@ -187,14 +207,19 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 \descript{| Software Engineering Intern }
 \location{May 2013 – Aug 2013 | Mountain View, CA}
 \begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
+\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+\item Created a backbone.js-like framework for the Captions editor.
+\end{tightemize}
 \sectionsep
 
 \runsubsection{Phabricator}
 \descript{| Open Source Contributor \& Team Leader}
 \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
 \begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
+\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+\item I created the Meme generator and more in PHP and Shell.
+\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

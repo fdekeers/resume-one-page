@@ -1,3 +1,6 @@
+# Visual Studio COde settings
+.vscode
+
 ## Latexian generated files:
 TSWLatexianTemp*
 
@@ -9,6 +12,7 @@ TSWLatexianTemp*
 *.fls
 *.out
 *.toc
+*.xdv
 
 ## Intermediate documents:
 *.dvi
