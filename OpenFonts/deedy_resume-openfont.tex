@@ -49,6 +49,8 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{enumitem}
+\setlist{noitemsep}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -68,8 +70,17 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{François}{De Keersmaeker}{
-    +32 470 29 32 63 \\
-    \href{mailto:francois.dekeersmaeker@uclouvain.be}{francois.dekeersmaeker@uclouvain.be}
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \href{mailto:francois.dekeersmaeker@uclouvain.be}{\bf{francois.dekeersmaeker@uclouvain.be}} \\
+        \includegraphics[scale=0.03]{images/linkedin.png} \href{https://www.linkedin.com/in/françois-de-keersmaeker-11301a210/}{\bf François De Keersmaeker}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.01]{images/orcid.png} \href{https://orcid.org/0000-0002-4967-4132}{\bf 0000-0002-4967-4132} \\
+        \includegraphics[scale=0.016]{images/scholar.png} \href{https://scholar.google.com/citations?user=UrEkeo4AAAAJ&hl=fr}{\bf François De Keersmaeker}
+    \end{minipage}
 }{face_pic_3_cropped.png}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,6 +101,35 @@
 \bibliographystyle{unsrt}
 \bibliography{publications}
 \nocite{*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     GITHUB REPOSITORIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Repositories}
+%\vspace{0.7cm}
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\begin{itemize}
+    \item \href{https://github.com/smart-home-network-security/smart-home-firewall}{\texttt{smart-home-firewall}}
+    \item \href{https://github.com/smart-home-network-security/pcap-fuzzer}{\texttt{pcap-fuzzer}}
+    \item \href{https://github.com/smart-home-network-security/pyyaml-loaders}{\texttt{pyyaml-loaders}}
+    \item \href{https://github.com/fdekeers/lorawan-smart-lln}{\texttt{lorawan-smart-lln}}
+    \item \href{https://github.com/zeek-plugins/mdns}{\texttt{zeek-plugins/mdns}}
+    \item \href{https://github.com/zeek-plugins/igmp}{\texttt{zeek-plugins/igmp}}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+%\vspace{0.7cm}
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\descript{Best Poster Award}
+TMA 2024 PhD School\\
+\location{May 22nd, 2024 | Dresden, Germany}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -127,10 +167,14 @@ Shell \textbullet{} Assembly \textbullet{} C \textbullet{} C++ \textbullet{} Jav
 Ruby \textbullet{} Scala \textbullet{} JavaScript \textbullet{} Android \textbullet{} Matlab \\
 \LaTeX \textbullet{} Erlang \textbullet{} SystemVerilog
 
+\vspace{5pt}
+
 \subsection{Tools}
-Linux \textbullet{} Windows \textbullet{} Git \textbullet{} SQL \textbullet{} Docker \\
+Linux \textbullet{} Windows \textbullet{} Git \textbullet{} SQL \textbullet{} Docker \textbullet{} CI/CD \\
 VirtualBox \textbullet{} Vagrant \textbullet{} GDB \textbullet{} Jinja \textbullet{} Arduino \\
 Ghidra \textbullet{} Zeek \textbullet{} LTspice \textbullet{} Intel Quartus Prime
+
+\vspace{5pt}
 
 \subsection{Desktop}
 Word \textbullet{} Excel \textbullet{} PowerPoint
@@ -140,19 +184,18 @@ Word \textbullet{} Excel \textbullet{} PowerPoint
 \includegraphics[scale=0.015]{images/france.png}  French: native \\
 \includegraphics[scale=0.015]{images/uk.png}  English: B2 \\
 \includegraphics[scale=0.015]{images/netherlands.png}  Dutch: B1 \\
-\includegraphics[scale=0.015]{images/italy.png}  Italian: A1
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-\includegraphics[scale=0.03]{images/linkedin.png} LinkedIn://  \href{https://www.linkedin.com/in/françois-de-keersmaeker-11301a210/}{\bf François De Keersmaeker} \\
-\includegraphics[scale=0.03]{images/github.png} Github:// \href{https://github.com/fdekeers}{\bf fdekeers} \\
-\includegraphics[scale=0.016]{images/scholar.png} Scholar:// \href{https://scholar.google.com/citations?user=UrEkeo4AAAAJ&hl=fr}{\bf François De Keersmaeker} \\
-\includegraphics[scale=0.01]{images/researchgate.png} ResearchGate:// \href{https://www.researchgate.net/profile/Francois-De-Keersmaeker}{\bf François De Keersmaeker} \\
-\includegraphics[scale=0.01]{images/orcid.png} ORCID:// \href{https://orcid.org/0000-0002-4967-4132}{\bf 0000-0002-4967-4132}
+% \section{Links} 
+% \includegraphics[scale=0.03]{images/linkedin.png} LinkedIn://  \href{https://www.linkedin.com/in/françois-de-keersmaeker-11301a210/}{\bf François De Keersmaeker} \\
+% \includegraphics[scale=0.03]{images/github.png} Github:// \href{https://github.com/fdekeers}{\bf fdekeers} \\
+% \includegraphics[scale=0.016]{images/scholar.png} Scholar:// \href{https://scholar.google.com/citations?user=UrEkeo4AAAAJ&hl=fr}{\bf François De Keersmaeker} \\
+% \includegraphics[scale=0.01]{images/researchgate.png} ResearchGate:// \href{https://www.researchgate.net/profile/Francois-De-Keersmaeker}{\bf François De Keersmaeker} \\
+% \includegraphics[scale=0.01]{images/orcid.png} ORCID:// \href{https://orcid.org/0000-0002-4967-4132}{\bf 0000-0002-4967-4132}
 %Facebook:// \href{https://www.facebook.com/francois.dekeersmaeker.7/}{\bf François De Keersmaeker} \\
 %YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
 %Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
