@@ -55,7 +55,7 @@ Last Updated on \today
 \end{minipage}
 \hfill
 \begin{minipage}[c]{0.15\textwidth}
-  \includegraphics[scale=0.075]{#4}
+  \includegraphics[width=0.65\textwidth]{#4}
 \end{minipage}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
